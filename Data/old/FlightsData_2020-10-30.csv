@@ -1,0 +1,128 @@
+airline,flight_code,departure_time,departure_city,flight_duration,arrival_time,arrival_city,flight_cost,number_of_stops,departure_date,departure_day,booking_date,booking_day
+Go Air,G8-101 | G8-136,08:35,New Delhi,03 hrs 05 mins ,11:40,Kolkata,"₹ 5,006",1 stop via Varanasi,2020-11-05,3,2020-10-30,4
+Spicejet,SG-8152 | SG-3724,10:20,New Delhi,06 hrs 10 mins ,16:30,Kolkata,"₹ 5,006",1 stop via Guwahati,2020-11-05,3,2020-10-30,4
+Spicejet,SG-8721 | SG-3508,06:25,New Delhi,07 hrs 35 mins ,14:00,Kolkata,"₹ 8,583",1 stop via Patna,2020-11-05,3,2020-10-30,4
+Go Air,G8-404 | G8-159,14:30,New Delhi,08 hrs 40 mins ,23:10,Kolkata,"₹ 14,286",1 stop via Varanasi,2020-11-05,3,2020-10-30,4
+Spicejet,SG-8105 | SG-503,21:30,New Delhi,10 hrs 45 mins ,08:15+1 DAYArrival : Kolkata06 Nov 2020,Kolkata,"₹ 5,006",1 stop via Chennai,2020-11-05,3,2020-10-30,4
+Go Air,G8-336 | G8-513,20:35,New Delhi,11 hrs 55 mins ,08:30+1 DAYArrival : Kolkata06 Nov 2020,Kolkata,"₹ 5,006",1 stop via Mumbai,2020-11-05,3,2020-10-30,4
+Go Air,G8-715 | G8-702,06:00,New Delhi,13 hrs 20 mins ,19:20,Kolkata,"₹ 12,443","2 stop via Ahmedabad,Jaipur",2020-11-05,3,2020-10-30,4
+Spicejet,SG-2646 | SG-279,08:50,New Delhi,13 hrs 20 mins ,22:10,Kolkata,"₹ 5,006",1 stop via Jaipur,2020-11-05,3,2020-10-30,4
+Go Air,G8-324 | G8-513,18:40,New Delhi,13 hrs 50 mins ,08:30+1 DAYArrival : Kolkata06 Nov 2020,Kolkata,"₹ 5,006",1 stop via Mumbai,2020-11-05,3,2020-10-30,4
+Go Air,G8-113 | G8-832,06:00,New Delhi,14 hrs 10 mins ,20:10,Kolkata,"₹ 10,372",1 stop via Bengaluru,2020-11-05,3,2020-10-30,4
+Go Air,G8-101 | G8-159,08:35,New Delhi,14 hrs 35 mins ,23:10,Kolkata,"₹ 5,006",1 stop via Varanasi,2020-11-05,3,2020-10-30,4
+Spicejet,SG-942 | SG-3508,19:30,New Delhi,18 hrs 30 mins ,14:00+1 DAYArrival : Kolkata06 Nov 2020,Kolkata,"₹ 5,006",1 stop via Patna,2020-11-05,3,2020-10-30,4
+Spicejet,SG-8128 | SG-503,10:55,New Delhi,21 hrs 20 mins ,08:15+1 DAYArrival : Kolkata06 Nov 2020,Kolkata,"₹ 8,583",1 stop via Chennai,2020-11-05,3,2020-10-30,4
+Spicejet,SG-8480 | SG-3508,15:55,New Delhi,22 hrs 05 mins ,14:00+1 DAYArrival : Kolkata06 Nov 2020,Kolkata,"₹ 14,286",1 stop via Patna,2020-11-05,3,2020-10-30,4
+Vistara,UK-711,17:50,New Delhi,03 hrs 45 mins ,21:35,Kolkata,"₹ 5,006",1 stop via Bhubaneswar,2020-11-05,3,2020-10-30,4
+IndiGo,6E-2424 | 6E-6157,14:10,New Delhi,05 hrs 10 mins ,19:20,Kolkata,"₹ 5,006",1 stop via Lucknow,2020-11-05,3,2020-10-30,4
+IndiGo,6E-2136 | 6E-355,09:15,New Delhi,06 hrs 50 mins ,16:05,Kolkata,"₹ 11,948",1 stop via Varanasi,2020-11-05,3,2020-10-30,4
+IndiGo,6E-943 | 6E-6157,12:25,New Delhi,06 hrs 55 mins ,19:20,Kolkata,"₹ 5,006",1 stop via Lucknow,2020-11-05,3,2020-10-30,4
+IndiGo,6E-906 | 6E-6157,08:40,New Delhi,10 hrs 40 mins ,19:20,Kolkata,"₹ 5,006",1 stop via Lucknow,2020-11-05,3,2020-10-30,4
+IndiGo,6E-176 | 6E-6124,12:00,New Delhi,07 hrs 10 mins ,19:10,Kolkata,"₹ 11,535",1 stop via Dehradun,2020-11-05,3,2020-10-30,4
+IndiGo,6E-129 | 6E-6124,08:05,New Delhi,11 hrs 05 mins ,19:10,Kolkata,"₹ 20,092",1 stop via Dehradun,2020-11-05,3,2020-10-30,4
+IndiGo,6E-2757 | 6E-241,07:10,New Delhi,10 hrs 30 mins ,17:40,Kolkata,"₹ 5,006",1 stop via Raipur,2020-11-05,3,2020-10-30,4
+IndiGo,6E-2051 | 6E-6955,06:55,New Delhi,09 hrs ,15:55,Kolkata,"₹ 5,006",1 stop via Visakhapatnam,2020-11-05,3,2020-10-30,4
+IndiGo,6E-2037 | 6E-7982,10:00,New Delhi,05 hrs 40 mins ,15:40,Kolkata,"₹ 9,454",1 stop via Allahabad,2020-11-05,3,2020-10-30,4
+IndiGo,6E-826 | 6E-7306,08:05,New Delhi,06 hrs 35 mins ,14:40,Kolkata,"₹ 5,006",1 stop via Gorakhpur,2020-11-05,3,2020-10-30,4
+IndiGo,6E-494 | 6E-634,05:45,New Delhi,05 hrs 10 mins ,10:55,Kolkata,"₹ 5,006",1 stop via Patna,2020-11-05,3,2020-10-30,4
+IndiGo,6E-6494 | 6E-634,03:20,New Delhi,07 hrs 35 mins ,10:55,Kolkata,"₹ 11,063",1 stop via Patna,2020-11-05,3,2020-10-30,4
+IndiGo,6E-889 | 6E-488,12:10,New Delhi,05 hrs 55 mins ,18:05,Kolkata,"₹ 5,006",1 stop via Agartala,2020-11-05,3,2020-10-30,4
+IndiGo,6E-889 | 6E-443,12:10,New Delhi,07 hrs 45 mins ,19:55,Kolkata,"₹ 5,006",1 stop via Agartala,2020-11-05,3,2020-10-30,4
+IndiGo,6E-114 | 6E-303,10:55,New Delhi,08 hrs 10 mins ,19:05,Kolkata,"₹ 11,535",1 stop via Jaipur,2020-11-05,3,2020-10-30,4
+Go Air,G8-718 | G8-532,19:10,New Delhi,13 hrs 35 mins ,08:45+1 DAYArrival : Kolkata06 Nov 2020,Kolkata,"₹ 20,092",1 stop via Ahmedabad,2020-11-05,3,2020-10-30,4
+IndiGo,6E-2701 | 6E-458,08:55,New Delhi,06 hrs 20 mins ,15:15,Kolkata,"₹ 5,006",1 stop via Bhubaneswar,2020-11-05,3,2020-10-30,4
+Vistara,UK-785 | UK-711,06:55,New Delhi,14 hrs 40 mins ,21:35,Kolkata,"₹ 5,006",1 stop via Bhubaneswar,2020-11-05,3,2020-10-30,4
+IndiGo,6E-203 | 6E-6107,14:10,New Delhi,07 hrs 05 mins ,21:15,Kolkata,"₹ 11,012",1 stop via Patna,2020-11-05,3,2020-10-30,4
+Air India,AI-558 | AI-529,10:00,New Delhi,08 hrs 10 mins ,18:10,Kolkata,"₹ 16,164",1 stop via Hyderabad,2020-11-05,3,2020-10-30,4
+Air India,AI-560 | AI-529,07:15,New Delhi,10 hrs 55 mins ,18:10,Kolkata,"₹ 5,006",1 stop via Hyderabad,2020-11-05,3,2020-10-30,4
+Air India,AI-544 | AI-525,16:15,New Delhi,15 hrs 40 mins ,07:55+1 DAYArrival : Kolkata06 Nov 2020,Kolkata,"₹ 5,006",1 stop via Hyderabad,2020-11-05,3,2020-10-30,4
+IndiGo,6E-2192 | 6E-6292,14:15,New Delhi,06 hrs 20 mins ,20:35,Kolkata,"₹ 8,583",1 stop via Guwahati,2020-11-05,3,2020-10-30,4
+IndiGo,6E-251 | 6E-349,05:05,New Delhi,07 hrs ,12:05,Kolkata,"₹ 14,286",1 stop via Guwahati,2020-11-05,3,2020-10-30,4
+IndiGo,6E-277 | 6E-6292,09:45,New Delhi,10 hrs 50 mins ,20:35,Kolkata,"₹ 5,006",1 stop via Guwahati,2020-11-05,3,2020-10-30,4
+IndiGo,6E-2912 | 6E-7265,17:10,New Delhi,05 hrs 45 mins ,22:55,Kolkata,"₹ 5,006",1 stop via Raipur,2020-11-05,3,2020-10-30,4
+IndiGo,6E-509 | 6E-7265,15:05,New Delhi,07 hrs 50 mins ,22:55,Kolkata,"₹ 10,372",1 stop via Raipur,2020-11-05,3,2020-10-30,4
+Vistara,UK-977 | UK-771,19:30,New Delhi,14 hrs 40 mins ,10:10+1 DAYArrival : Kolkata06 Nov 2020,Kolkata,"₹ 5,006",1 stop via Mumbai,2020-11-05,3,2020-10-30,4
+Vistara,UK-955 | UK-771,18:10,New Delhi,16 hrs ,10:10+1 DAYArrival : Kolkata06 Nov 2020,Kolkata,"₹ 5,006",1 stop via Mumbai,2020-11-05,3,2020-10-30,4
+Vistara,UK-941 | UK-771,16:30,New Delhi,17 hrs 40 mins ,10:10+1 DAYArrival : Kolkata06 Nov 2020,Kolkata,"₹ 11,948",1 stop via Mumbai,2020-11-05,3,2020-10-30,4
+Vistara,UK-933 | UK-771,15:10,New Delhi,19 hrs ,10:10+1 DAYArrival : Kolkata06 Nov 2020,Kolkata,"₹ 5,006",1 stop via Mumbai,2020-11-05,3,2020-10-30,4
+Vistara,UK-993 | UK-771,13:50,New Delhi,20 hrs 20 mins ,10:10+1 DAYArrival : Kolkata06 Nov 2020,Kolkata,"₹ 5,006",1 stop via Mumbai,2020-11-05,3,2020-10-30,4
+Vistara,UK-945 | UK-771,12:30,New Delhi,21 hrs 40 mins ,10:10+1 DAYArrival : Kolkata06 Nov 2020,Kolkata,"₹ 10,372",1 stop via Mumbai,2020-11-05,3,2020-10-30,4
+Vistara,UK-977 | UK-773,19:30,New Delhi,22 hrs 40 mins ,18:10+1 DAYArrival : Kolkata06 Nov 2020,Kolkata,"₹ 5,163",1 stop via Mumbai,2020-11-05,3,2020-10-30,4
+Vistara,UK-955 | UK-773,18:10,New Delhi,24 hrs ,18:10+1 DAYArrival : Kolkata06 Nov 2020,Kolkata,"₹ 7,788",1 stop via Mumbai,2020-11-05,3,2020-10-30,4
+Vistara,UK-995 | UK-771,09:25,New Delhi,24 hrs 45 mins ,10:10+1 DAYArrival : Kolkata06 Nov 2020,Kolkata,"₹ 7,788",1 stop via Mumbai,2020-11-05,3,2020-10-30,4
+Air India,AI-624 | AI-675,20:00,New Delhi,12 hrs 50 mins ,08:50+1 DAYArrival : Kolkata06 Nov 2020,Kolkata,"₹ 8,707",1 stop via Mumbai,2020-11-05,3,2020-10-30,4
+Air India,AI-537 | AI-675,17:00,New Delhi,15 hrs 50 mins ,08:50+1 DAYArrival : Kolkata06 Nov 2020,Kolkata,"₹ 7,788",1 stop via Mumbai,2020-11-05,3,2020-10-30,4
+IndiGo,6E-251 | 6E-6353,05:05,New Delhi,10 hrs 45 mins ,15:50,Kolkata,"₹ 7,788","2 stop via Guwahati,Imphal",2020-11-05,3,2020-10-30,4
+Air India,AI-506 | AI-577,11:40,New Delhi,10 hrs 10 mins ,21:50,Kolkata,"₹ 8,707",1 stop via Bengaluru,2020-11-05,3,2020-10-30,4
+Air India,AI-504 | AI-776,21:40,New Delhi,13 hrs ,10:40+1 DAYArrival : Kolkata06 Nov 2020,Kolkata,"₹ 7,788",1 stop via Bengaluru,2020-11-05,3,2020-10-30,4
+Air India,AI-803 | AI-577,05:35,New Delhi,16 hrs 15 mins ,21:50,Kolkata,"₹ 7,788",1 stop via Bengaluru,2020-11-05,3,2020-10-30,4
+IndiGo,6E-107 | 6E-6107,17:20,New Delhi,03 hrs 55 mins ,21:15,Kolkata,"₹ 8,707",1 stop via Patna,2020-11-05,3,2020-10-30,4
+Air India,AI-531 | AI-614 | AI-773,20:15,New Delhi,22 hrs 30 mins ,18:45+1 DAYArrival : Kolkata06 Nov 2020,Kolkata,"₹ 7,788","2 stop via Ahmedabad,Mumbai",2020-11-05,3,2020-10-30,4
+Air India,AI-851 | AI-571 | AI-525,06:30,New Delhi,25 hrs 25 mins ,07:55+1 DAYArrival : Kolkata06 Nov 2020,Kolkata,"₹ 7,788","3 stop via Pune,Ahmedabad,Hyderabad",2020-11-05,3,2020-10-30,4
+airline,flight_code,departure_time,departure_city,flight_duration,arrival_time,arrival_city,flight_cost,number_of_stops,departure_date,departure_day,booking_date,booking_day
+Go Air,G8-101,06:00,New Delhi,02 hrs 05 mins ,08:05,Kolkata,"₹ 5,006",Non stop,2020-11-06,4,2020-10-30,4
+Spicejet,SG-263,06:05,New Delhi,02 hrs 05 mins ,08:10,Kolkata,"₹ 5,006",Non stop,2020-11-06,4,2020-10-30,4
+IndiGo,6E-282,04:30,New Delhi,02 hrs 15 mins ,06:45,Kolkata,"₹ 5,453",Non stop,2020-11-06,4,2020-10-30,4
+IndiGo,6E-377,07:50,New Delhi,02 hrs 15 mins ,10:05,Kolkata,"₹ 9,310",Non stop,2020-11-06,4,2020-10-30,4
+IndiGo,6E-6457,10:20,New Delhi,02 hrs 15 mins ,12:35,Kolkata,"₹ 5,006",Non stop,2020-11-06,4,2020-10-30,4
+IndiGo,6E-307,18:40,New Delhi,02 hrs 15 mins ,20:55,Kolkata,"₹ 5,006",Non stop,2020-11-06,4,2020-10-30,4
+AirAsia,I5-978,15:35,New Delhi,02 hrs 20 mins ,17:55,Kolkata,"₹ 5,904",Non stop,2020-11-06,4,2020-10-30,4
+IndiGo,6E-2076,21:20,New Delhi,02 hrs 20 mins ,23:40,Kolkata,"₹ 5,006",Non stop,2020-11-06,4,2020-10-30,4
+AirAsia,I5-548,05:25,New Delhi,02 hrs 25 mins ,07:50,Kolkata,"₹ 5,006",Non stop,2020-11-06,4,2020-10-30,4
+IndiGo,6E-261,17:05,New Delhi,02 hrs 40 mins ,19:45,Kolkata,"₹ 5,399",Non stop,2020-11-06,4,2020-10-30,4
+Spicejet,SG-8721 | SG-3508,06:25,New Delhi,07 hrs 35 mins ,14:00,Kolkata,"₹ 5,006",1 stop via Patna,2020-11-06,4,2020-10-30,4
+Go Air,G8-173 | G8-394,07:15,New Delhi,07 hrs 50 mins ,15:05,Kolkata,"₹ 5,006",1 stop via Pune,2020-11-06,4,2020-10-30,4
+AirAsia,I5-742 | I5-588,09:35,New Delhi,08 hrs 40 mins ,18:15,Kolkata,"₹ 5,399",1 stop via Bagdogra,2020-11-06,4,2020-10-30,4
+Spicejet,SG-8128 | SG-278,10:55,New Delhi,10 hrs 25 mins ,21:20,Kolkata,"₹ 5,006",1 stop via Chennai,2020-11-06,4,2020-10-30,4
+Spicejet,SG-8152 | SG-3724,10:20,New Delhi,10 hrs 45 mins ,21:05,Kolkata,"₹ 5,006",1 stop via Guwahati,2020-11-06,4,2020-10-30,4
+Go Air,G8-395 | G8-511,11:35,New Delhi,11 hrs 40 mins ,23:15,Kolkata,"₹ 5,399",1 stop via Mumbai,2020-11-06,4,2020-10-30,4
+AirAsia,I5-966 | I5-588,05:30,New Delhi,12 hrs 45 mins ,18:15,Kolkata,"₹ 5,006",1 stop via Bagdogra,2020-11-06,4,2020-10-30,4
+Go Air,G8-715 | G8-702,06:00,New Delhi,13 hrs 20 mins ,19:20,Kolkata,"₹ 5,006","2 stop via Ahmedabad,Jaipur",2020-11-06,4,2020-10-30,4
+Go Air,G8-113 | G8-832,06:00,New Delhi,14 hrs 10 mins ,20:10,Kolkata,"₹ 5,399",1 stop via Bengaluru,2020-11-06,4,2020-10-30,4
+Spicejet,SG-942 | SG-3508,19:30,New Delhi,18 hrs 30 mins ,14:00+1 DAYArrival : Kolkata07 Nov 2020,Kolkata,"₹ 5,006",1 stop via Patna,2020-11-06,4,2020-10-30,4
+Spicejet,SG-8480 | SG-3508,15:55,New Delhi,22 hrs 05 mins ,14:00+1 DAYArrival : Kolkata07 Nov 2020,Kolkata,"₹ 5,006",1 stop via Patna,2020-11-06,4,2020-10-30,4
+Air India,AI-401,07:10,New Delhi,01 hr 55 mins ,09:05,Kolkata,"₹ 5,320",Non stop,2020-11-06,4,2020-10-30,4
+Spicejet,SG-253,18:20,New Delhi,01 hr 55 mins ,20:15,Kolkata,"₹ 5,006",Non stop,2020-11-06,4,2020-10-30,4
+Air India,AI-535,16:20,New Delhi,02 hrs 10 mins ,18:30,Kolkata,"₹ 5,006",Non stop,2020-11-06,4,2020-10-30,4
+Air India,AI-702,21:15,New Delhi,02 hrs 15 mins ,23:30,Kolkata,"₹ 5,399",Non stop,2020-11-06,4,2020-10-30,4
+Vistara,UK-747,06:15,New Delhi,02 hrs 05 mins ,08:20,Kolkata,"₹ 5,006",Non stop,2020-11-06,4,2020-10-30,4
+Vistara,UK-707,17:50,New Delhi,02 hrs 10 mins ,20:00,Kolkata,"₹ 5,006",Non stop,2020-11-06,4,2020-10-30,4
+IndiGo,6E-2424 | 6E-6157,14:10,New Delhi,05 hrs 10 mins ,19:20,Kolkata,"₹ 5,320",1 stop via Lucknow,2020-11-06,4,2020-10-30,4
+IndiGo,6E-943 | 6E-6157,12:25,New Delhi,06 hrs 55 mins ,19:20,Kolkata,"₹ 5,006",1 stop via Lucknow,2020-11-06,4,2020-10-30,4
+IndiGo,6E-671 | 6E-429,18:20,New Delhi,04 hrs 25 mins ,22:45,Kolkata,"₹ 5,006",1 stop via Varanasi,2020-11-06,4,2020-10-30,4
+IndiGo,6E-2136 | 6E-355,09:15,New Delhi,06 hrs 50 mins ,16:05,Kolkata,"₹ 5,399",1 stop via Varanasi,2020-11-06,4,2020-10-30,4
+IndiGo,6E-519 | 6E-429,15:40,New Delhi,07 hrs 05 mins ,22:45,Kolkata,"₹ 5,006",1 stop via Varanasi,2020-11-06,4,2020-10-30,4
+IndiGo,6E-2757 | 6E-241,07:10,New Delhi,10 hrs 30 mins ,17:40,Kolkata,"₹ 5,006",1 stop via Raipur,2020-11-06,4,2020-10-30,4
+IndiGo,6E-826 | 6E-7306,08:05,New Delhi,06 hrs 35 mins ,14:40,Kolkata,"₹ 10,372",1 stop via Gorakhpur,2020-11-06,4,2020-10-30,4
+IndiGo,6E-2912 | 6E-7265,17:10,New Delhi,05 hrs 45 mins ,22:55,Kolkata,"₹ 5,006",1 stop via Raipur,2020-11-06,4,2020-10-30,4
+IndiGo,6E-509 | 6E-7265,15:05,New Delhi,07 hrs 50 mins ,22:55,Kolkata,"₹ 5,006",1 stop via Raipur,2020-11-06,4,2020-10-30,4
+Air India,AI-544 | AI-525,16:15,New Delhi,15 hrs 40 mins ,07:55+1 DAYArrival : Kolkata07 Nov 2020,Kolkata,"₹ 11,564",1 stop via Hyderabad,2020-11-06,4,2020-10-30,4
+IndiGo,6E-2051 | 6E-6955,07:05,New Delhi,08 hrs 50 mins ,15:55,Kolkata,"₹ 17,385",1 stop via Visakhapatnam,2020-11-06,4,2020-10-30,4
+IndiGo,6E-107 | 6E-6107,17:20,New Delhi,03 hrs 55 mins ,21:15,Kolkata,"₹ 5,006",1 stop via Patna,2020-11-06,4,2020-10-30,4
+IndiGo,6E-494 | 6E-634,05:45,New Delhi,05 hrs 10 mins ,10:55,Kolkata,"₹ 5,006",1 stop via Patna,2020-11-06,4,2020-10-30,4
+IndiGo,6E-6494 | 6E-634,03:20,New Delhi,07 hrs 35 mins ,10:55,Kolkata,"₹ 5,320",1 stop via Patna,2020-11-06,4,2020-10-30,4
+Air India,AI-879 | AI-722,08:45,New Delhi,06 hrs 40 mins ,15:25,Kolkata,"₹ 5,006",1 stop via Bagdogra,2020-11-06,4,2020-10-30,4
+IndiGo,6E-889 | 6E-488,12:10,New Delhi,05 hrs 55 mins ,18:05,Kolkata,"₹ 5,006",1 stop via Agartala,2020-11-06,4,2020-10-30,4
+IndiGo,6E-889 | 6E-443,12:10,New Delhi,07 hrs 45 mins ,19:55,Kolkata,"₹ 11,948",1 stop via Agartala,2020-11-06,4,2020-10-30,4
+IndiGo,6E-114 | 6E-303,10:55,New Delhi,08 hrs 10 mins ,19:05,Kolkata,"₹ 5,006",1 stop via Jaipur,2020-11-06,4,2020-10-30,4
+IndiGo,6E-2037 | 6E-7982,10:00,New Delhi,05 hrs 40 mins ,15:40,Kolkata,"₹ 5,006",1 stop via Allahabad,2020-11-06,4,2020-10-30,4
+Air India,AI-469 | AI-9746,06:30,New Delhi,10 hrs 50 mins ,17:20,Kolkata,"₹ 12,443","2 stop via Raipur,Jharsuguda",2020-11-06,4,2020-10-30,4
+IndiGo,6E-2701 | 6E-458,08:55,New Delhi,06 hrs 20 mins ,15:15,Kolkata,"₹ 5,006",1 stop via Bhubaneswar,2020-11-06,4,2020-10-30,4
+IndiGo,6E-2298 | 6E-6376,16:20,New Delhi,06 hrs 40 mins ,23:00,Kolkata,"₹ 5,006",1 stop via Ahmedabad,2020-11-06,4,2020-10-30,4
+IndiGo,6E-653 | 6E-6376,13:50,New Delhi,09 hrs 10 mins ,23:00,Kolkata,"₹ 11,535",1 stop via Ahmedabad,2020-11-06,4,2020-10-30,4
+IndiGo,6E-2407 | 6E-6135,09:30,New Delhi,09 hrs 25 mins ,18:55,Kolkata,"₹ 20,092",1 stop via Ahmedabad,2020-11-06,4,2020-10-30,4
+IndiGo,6E-203 | 6E-6107,14:10,New Delhi,07 hrs 05 mins ,21:15,Kolkata,"₹ 5,006",1 stop via Patna,2020-11-06,4,2020-10-30,4
+Air India,AI-558 | AI-529,10:00,New Delhi,08 hrs 10 mins ,18:10,Kolkata,"₹ 5,006",1 stop via Hyderabad,2020-11-06,4,2020-10-30,4
+Air India,AI-560 | AI-529,07:15,New Delhi,10 hrs 55 mins ,18:10,Kolkata,"₹ 5,320",1 stop via Hyderabad,2020-11-06,4,2020-10-30,4
+IndiGo,6E-2192 | 6E-6292,14:15,New Delhi,06 hrs 20 mins ,20:35,Kolkata,"₹ 5,006",1 stop via Guwahati,2020-11-06,4,2020-10-30,4
+IndiGo,6E-251 | 6E-349,05:05,New Delhi,07 hrs ,12:05,Kolkata,"₹ 5,006",1 stop via Guwahati,2020-11-06,4,2020-10-30,4
+IndiGo,6E-2019 | 6E-6353,10:10,New Delhi,05 hrs 40 mins ,15:50,Kolkata,"₹ 11,804",1 stop via Imphal,2020-11-06,4,2020-10-30,4
+Air India,AI-504 | AI-776,21:40,New Delhi,13 hrs ,10:40+1 DAYArrival : Kolkata07 Nov 2020,Kolkata,"₹ 5,006",1 stop via Bengaluru,2020-11-06,4,2020-10-30,4
+Vistara,UK-945 | UK-773,12:30,New Delhi,05 hrs 40 mins ,18:10,Kolkata,"₹ 5,006",1 stop via Mumbai,2020-11-06,4,2020-10-30,4
+Vistara,UK-995 | UK-773,09:25,New Delhi,08 hrs 45 mins ,18:10,Kolkata,"₹ 11,012",1 stop via Mumbai,2020-11-06,4,2020-10-30,4
+Vistara,UK-943 | UK-773,08:05,New Delhi,10 hrs 05 mins ,18:10,Kolkata,"₹ 16,164",1 stop via Mumbai,2020-11-06,4,2020-10-30,4
+Spicejet,SG-287 | SG-277,05:45,New Delhi,12 hrs ,17:45,Kolkata,"₹ 5,006",1 stop via Bagdogra,2020-11-06,4,2020-10-30,4
+Air India,AI-865 | AI-773,10:40,New Delhi,08 hrs 05 mins ,18:45,Kolkata,"₹ 5,006",1 stop via Mumbai,2020-11-06,4,2020-10-30,4
+Air India,AI-887 | AI-773,06:50,New Delhi,11 hrs 55 mins ,18:45,Kolkata,"₹ 9,322",1 stop via Mumbai,2020-11-06,4,2020-10-30,4
+Air India,AI-506 | AI-577,11:40,New Delhi,10 hrs 10 mins ,21:50,Kolkata,"₹ 5,006",1 stop via Bengaluru,2020-11-06,4,2020-10-30,4
+Air India,AI-803 | AI-577,05:35,New Delhi,16 hrs 15 mins ,21:50,Kolkata,"₹ 5,006",1 stop via Bengaluru,2020-11-06,4,2020-10-30,4
