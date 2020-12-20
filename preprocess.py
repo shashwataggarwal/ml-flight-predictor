@@ -265,6 +265,8 @@ def preprocess(graphs=False):
     df['flight_cost'] = df['flight_cost'].apply(clean_price)
     df['days_to_depart'] = df.apply(days_between, axis=1)
 
+    df = createClasification(df)
+
     # Can plot graphs now
     # if(graphs):
     df = drop_pairs_airlines(df)
@@ -276,7 +278,6 @@ def preprocess(graphs=False):
     df = hot_encode_clusters(df)
 
     df.drop_duplicates(inplace=True)
-    df = createClasification(df)
     
     if (not graphs):
         # Drop columns
@@ -292,6 +293,24 @@ def preprocess(graphs=False):
 def loadData(path='./Processed_Data', file_name='training_data.csv'):
     df = pd.read_csv('{}/{}'.format(path,file_name), header=0)
     return df
+
+def preprocessClf(graphs=False,file_name='pivot_data_new.csv', path='./Processed_Data'):
+    # Preprocess Classification Dataset
+    df = loadData(path, file_name)
+    df = drop_pairs_airlines(df)
+
+    # One Hot encoding
+    hot_encoding = pd.get_dummies(df['flight_path'])
+    df = pd.concat([df, hot_encoding], axis=1)
+    df = hot_encode_airline(df)
+    df = hot_encode_clusters(df)
+
+    df.drop_duplicates(inplace=True)
+
+    df.drop(columns=['flight_path',
+                        'departure_day', 'airline','departure_time', 'departure_time_day'], inplace=True)  
+
+    return df  
 
 if __name__ == "__main__":
     df = preprocess()
