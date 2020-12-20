@@ -76,9 +76,20 @@ def load_model(file_name="model"):
     return model
 
 
-def get_X_series(airline, days_to_depart, path, day_time):
+def get_X_series(airline, days_to_depart, path, day_time, fare):
     print(airline, path, day_time, days_to_depart)
-    return X.loc[(X[airline] == 1) & (X[path] == 1) & (X[day_time] == 1) & (X['days_to_depart'] == days_to_depart)]
+    x = X.loc[(X[airline] == 1) & (X[path] == 1) & (
+        X[day_time] == 1) & (X['days_to_depart'] == days_to_depart)]
+    if (x.empty):
+        x = pd.DataFrame(0, index=np.arange(1), columns=X.columns)
+        x[airline] = 1
+        x[path] = 1
+        x[day_time] = 1
+        x['days_to_depart'] = days_to_depart
+        x["count"] = 1
+        x["mean"] = x["min"] = x["first_quartile"] = x['custom_fare'] = fare
+
+    return x
 
 
 random_state = 69

@@ -37,7 +37,7 @@ if __name__ == "__main__":
     path = paths[path_index]
     day_time = f"{times[time_index]}-{day}"
 
-    X = get_X_series(airline, days_to_depart, path, day_time)
+    X = get_X_series(airline, days_to_depart, path, day_time, fare)
 
     print(X)
 
