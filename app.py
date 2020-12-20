@@ -9,6 +9,8 @@ days_to_depart = 1
 times = ["afternoon", "evening", "morning", "night"]
 
 if __name__ == "__main__":
+    # Menue driven program
+
     print("Select flight path:")
     for i, path in enumerate(paths):
         print(i, path)
@@ -43,4 +45,4 @@ if __name__ == "__main__":
 
     y = clf.predict(X)
 
-    print(y)
+    print("Output =", y)

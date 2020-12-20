@@ -24,6 +24,9 @@ tqdm.pandas()
 
 
 def trainAndGenerateReport(X_train, X_test, y_train, y_test, clf, model_name):
+    """
+    Train model and report accuracy scores, ROC curve
+    """
     # Train Model
     clf.fit(X_train, y_train)
 
@@ -66,18 +69,24 @@ def trainAndGenerateReport(X_train, X_test, y_train, y_test, clf, model_name):
 
 
 def save_model(model, file_name="model"):
+    """
+    Pickle dump trained model
+    """
     pickle.dump(model, open(f'./Weights/{file_name}.pkl', 'wb'))
     print("Model Saved!")
 
 
 def load_model(file_name="model"):
+    """
+    Load pretrained model
+    """
     model = pickle.load(open(f'./Weights/{file_name}', 'rb'))
     print("Model Loaded!")
     return model
 
 
 def get_X_series(airline, days_to_depart, path, day_time, fare):
-    print(airline, path, day_time, days_to_depart)
+    # print(airline, path, day_time, days_to_depart)
     x = X.loc[(X[airline] == 1) & (X[path] == 1) & (
         X[day_time] == 1) & (X['days_to_depart'] == days_to_depart)]
     if (x.empty):
@@ -90,6 +99,28 @@ def get_X_series(airline, days_to_depart, path, day_time, fare):
         x["mean"] = x["min"] = x["first_quartile"] = x['custom_fare'] = fare
 
     return x
+
+
+def estimate_savings(model=None):
+    """
+    Calculate estimated savings
+    """
+    # Iterating and labeling
+    pivot_frame = preprocess.loadData(file_name="pivot_data_new.csv")
+    temp_group = pivot_frame.groupby(
+        ['airline', 'flight_path', 'days_to_depart'])
+    max_price = 0
+    i = 0
+    for indexes, res in tqdm(temp_group):
+        if(i % 36 == 0):
+            max_price = 0
+        i += 1
+        m = res["mean"].iloc[0]
+        max_price = max(max_price, m)
+        pivot_frame.loc[(pivot_frame['airline'] == indexes[0]) & (pivot_frame['flight_path'] == indexes[1]) & (
+            pivot_frame['days_to_depart'] == indexes[2]), 'delta'] = max_price - m
+    print("Total Savings =", pivot_frame['delta'].sum())
+    print("Average Savings =", pivot_frame['delta'].mean())
 
 
 random_state = 69
