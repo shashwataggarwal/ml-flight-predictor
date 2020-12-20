@@ -1,7 +1,9 @@
 import datetime
 import pandas as pd
+import numpy as np
 import re
 import os.path
+from tqdm import tqdm
 
 
 def get_time_delta(time):
@@ -164,6 +166,77 @@ def removeOutliers(df):
     df = df[df['flight_cost'] < 11000]
     return df
 
+def createPivotTable(df):
+    # Create groupby ref
+    groups = df.groupby(['airline','flight_path','days_to_depart'])
+    
+    # Weights and parameters
+    prev_range_date = 5
+    max_day_to_depart = df['days_to_depart'].max()
+    weight = 0.75
+
+    pivot_frame = pd.DataFrame([],columns=['airline','flight_path','days_to_depart','count','mean','min', 'std','first_quartile','custom_fare'])
+
+    # Iterate over groups
+    for indexes, group in tqdm(groups):
+        # Calculaate aggregates
+        count = group['flight_cost'].count()
+        avg = group['flight_cost'].mean()
+        min_fare = group['flight_cost'].min()
+        std_dev = group['flight_cost'].std()
+        group_quartile = np.percentile(group['flight_cost'], 25).astype('float')
+        # entire_quartile = np.percentile(df[(df['airline']==indexes[0]) & (df['flight_path']==indexes[1]) & (df['days_to_depart'] >= indexes[2])]['flight_cost'], 25)
+
+        # Handling Edge cases
+        if (indexes[2]>=max_day_to_depart-prev_range_date):
+            temp_frame = pd.DataFrame([*indexes,count,avg,min_fare,std_dev,group_quartile,group_quartile]).T
+
+        else:
+            prev_group_quartile = np.percentile(df[(df['airline']==indexes[0]) & (df['flight_path']==indexes[1]) & (df['days_to_depart'] == indexes[2]+prev_range_date)]['flight_cost'], 25)
+            # prev_range_quartile = np.percentile(df[(df['airline']==indexes[0]) & (df['flight_path']==indexes[1]) & (df['days_to_depart'] >= indexes[2]+prev_range_date)]['flight_cost'], 25)
+            custom_fare = (weight * group_quartile) + ((1-weight) * prev_group_quartile)
+            temp_frame = pd.DataFrame([*indexes, count,avg,min_fare,std_dev,group_quartile,custom_fare]).T
+        
+        # append to pivot table
+        temp_frame.columns = ['airline','flight_path','days_to_depart','count','mean','min', 'std','first_quartile','custom_fare']
+        pivot_frame = pivot_frame.append(temp_frame, ignore_index=True)
+
+    # Creating Label variable
+    pivot_frame['logical'] = np.zeros(pivot_frame.shape[0])
+
+    # Creating group for assigning labels
+    temp_group = pivot_frame.groupby(['airline','flight_path'])
+
+    # Iterating and labeling
+    for indexes, res in tqdm(temp_group):
+        pivot_frame.loc[(pivot_frame['airline']==indexes[0]) & (pivot_frame['flight_path']==indexes[1]) & (pivot_frame['custom_fare']==res['custom_fare'].min()),'logical'] = 1
+
+    pivot_frame.to_csv('./Processed_Data/pivot_data.csv',index=False)
+    return pivot_frame
+
+def createClasification(df):
+    # Get pivot table
+    pivot_frame = createPivotTable(df)
+
+    # Create new feature column
+    df['label'] = np.zeros(df.shape[0])
+    df['group_count'] = np.zeros(df.shape[0])
+    df['group_mean'] = np.zeros(df.shape[0])
+    df['group_min'] = np.zeros(df.shape[0])
+    df['group_quartile'] = np.zeros(df.shape[0])
+    df['custom_fare'] = np.zeros(df.shape[0])
+
+    # Fill feature columns data
+    for i in tqdm(range(pivot_frame.shape[0])):
+        entry = pivot_frame.iloc[i]
+        df.loc[(df['airline']==entry['airline']) & (df['flight_path']==entry['flight_path']) & (df['days_to_depart'] == entry['days_to_depart']),'label']=entry['logical_1']
+        df.loc[(df['airline']==entry['airline']) & (df['flight_path']==entry['flight_path']) & (df['days_to_depart'] == entry['days_to_depart']),'group_count']=entry['count']
+        df.loc[(df['airline']==entry['airline']) & (df['flight_path']==entry['flight_path']) & (df['days_to_depart'] == entry['days_to_depart']),'group_mean']=entry['mean']
+        df.loc[(df['airline']==entry['airline']) & (df['flight_path']==entry['flight_path']) & (df['days_to_depart'] == entry['days_to_depart']),'group_min']=entry['min']
+        df.loc[(df['airline']==entry['airline']) & (df['flight_path']==entry['flight_path']) & (df['days_to_depart'] == entry['days_to_depart']),'group_quartile']=entry['first_quartile']
+        df.loc[(df['airline']==entry['airline']) & (df['flight_path']==entry['flight_path']) & (df['days_to_depart'] == entry['days_to_depart']),'custom_fare']=entry['custom_fare_1']
+
+    return df
 
 def preprocess(graphs=False):
     '''
@@ -195,6 +268,7 @@ def preprocess(graphs=False):
     df = hot_encode_clusters(df)
 
     df.drop_duplicates(inplace=True)
+    df = createClasification(df)
     
     if (not graphs):
         # Drop columns
