@@ -138,3 +138,6 @@ dmypy.json
 cython_debug/
 
 Processed_Data/*.csv
+
+Scrapper/Data/*
+Scrapper/Data/*

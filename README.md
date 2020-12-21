@@ -12,14 +12,34 @@ This project was trained on data collected for top 7 domestic routes in India:
 - Mumbai → Bengaluru
 - New Delhi → Kolkata
 
-Contributors: Shashwat Aggarwal (2018097), Shikhar Sheoran (2018099), Sidhant S Sarkar (2018102)
+Contributors: Shashwat Aggarwal (2018097), Shikhar Sheoran (2018099), Sidhant S Sarkar (2018102) [Group 4]
 
-## Setup:
+## Requirements
+
+1. `Python 3.6+`
+2. `selenium`
+3. `bs4`
+4. `scikit-learn`
+5. `numpy`
+6. `pandas`
+7. `tqdm`
+8. Google chrome and chrome driver version must match. Please check your google chrome browser version and download the chrome driver accordingly.
+9. You can download the correction version of chrome driver from the link - http://chromedriver.chromium.org/downloads.
+
+## Setup
 
 1. `git clone https://github.com/shashwataggarwal/ml-flight-predictor.git`
 2. `wget https://github.com/shashwataggarwal/ml-flight-predictor/releases/download/v1.1/processed_data.zip`
 3. `unzip processed_data.zip -d ./ml-flight-predictor/Processed_Data`
 4. `cd ml-flight-predictor`
+
+## Data Scrapper
+
+1. `cd ml-flight-predictor/Scrapper`
+2. Update `main.py`
+3. Run `main.py`
+4. `Crontab` can be setup to automate the data collection pipeline
+5. `searchandkill.sh` to kill stray process during automation
 
 ## Running Pre-trained Model
 
